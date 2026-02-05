@@ -22,7 +22,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <span className="font-heading text-2xl font-bold text-foreground">
-              SunMilled Naturals
+              Root & Fruit Co.
             </span>
           </Link>
 

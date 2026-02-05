@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <h3 className="font-heading text-xl font-bold text-foreground mb-4">
-              SunMilled Naturals
+              Root & Fruit Co.
             </h3>
             <p className="font-paragraph text-sm text-foreground/70 mb-6">
               Real fruits & veggies—finely milled. Clean powders made from real produce for everyday nutrition.
@@ -119,7 +119,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-paragraph text-xs text-foreground/60 text-center md:text-left">
-              © {new Date().getFullYear()} SunMilled Naturals. All rights reserved.
+              © {new Date().getFullYear()} Root & Fruit Co. All rights reserved.
             </p>
             <p className="font-paragraph text-xs text-foreground/60 text-center md:text-right max-w-2xl">
               These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.
