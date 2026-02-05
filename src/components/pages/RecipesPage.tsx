@@ -6,8 +6,6 @@ import { Recipes } from '@/entities';
 import { Card } from '@/components/ui/card';
 import { Image } from '@/components/ui/image';
 import { Button } from '@/components/ui/button';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 export default function RecipesPage() {
   const [recipes, setRecipes] = useState<Recipes[]>([]);
@@ -39,8 +37,6 @@ export default function RecipesPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      
       {/* Hero Section */}
       <section className="w-full max-w-[100rem] mx-auto px-6 py-16 md:py-24">
         <motion.div 
@@ -136,7 +132,6 @@ export default function RecipesPage() {
         )}
       </section>
 
-      <Footer />
     </div>
   );
 }

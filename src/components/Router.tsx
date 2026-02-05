@@ -7,6 +7,8 @@ import { ProductDetailsRoute, productRouteLoader } from '@/wix-verticals/react-p
 import { StoreCollectionRoute, storeCollectionRouteLoader } from '@/wix-verticals/react-pages/react-router/routes/store-collection';
 import { defaultStoreCollectionRouteRedirectLoader } from '@/wix-verticals/react-pages/react-router/routes/store-redirect';
 import { Cart } from '@/wix-verticals/react-pages/react-router/routes/cart';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 // Pages
 import HomePage from '@/components/pages/HomePage';
@@ -27,7 +29,11 @@ function MainLayout() {
   return (
     <WixServicesProvider>
       <ScrollToTop />
-      <Outlet />
+      <Header />
+      <main className="pt-20">
+        <Outlet />
+      </main>
+      <Footer />
     </WixServicesProvider>
   );
 }

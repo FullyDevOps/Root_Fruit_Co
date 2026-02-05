@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import { Leaf, Droplet, Wind, Package, FileCheck, Shield } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 export default function QualityPage() {
   const fadeIn = {
@@ -59,8 +57,6 @@ export default function QualityPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      
       {/* Hero Section */}
       <section className="w-full max-w-[100rem] mx-auto px-6 py-16 md:py-24">
         <motion.div 
@@ -204,7 +200,6 @@ export default function QualityPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }
