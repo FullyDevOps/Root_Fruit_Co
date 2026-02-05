@@ -6,6 +6,8 @@ import { Sparkles, Leaf, FlaskConical, ShoppingBag, Blend, Apple, Salad, Package
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Image } from '@/components/ui/image';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function HomePage() {
   // ---------------------------------------------------------------------------
@@ -144,8 +146,6 @@ export default function HomePage() {
           color: transparent;
         }
       `}</style>
-
-      <Header />
 
       <main>
         {/* ---------------------------------------------------------------------------
@@ -469,8 +469,6 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }
