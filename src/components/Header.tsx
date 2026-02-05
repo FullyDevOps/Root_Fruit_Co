@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ShoppingCart } from 'lucide-react';
 import { useState } from 'react';
-import { MiniCart } from '@/wix-verticals/react-pages/react-router/routes/root';
 
-export default function Header() {
+function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
@@ -41,7 +40,9 @@ export default function Header() {
 
           {/* Cart and Mobile Menu */}
           <div className="flex items-center gap-4">
-            <MiniCart cartIconClassName="flex items-center justify-center" />
+            <button className="text-foreground hover:text-primary transition-colors">
+              <ShoppingCart className="w-6 h-6" />
+            </button>
             
             {/* Mobile Menu Button */}
             <button
@@ -77,3 +78,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;
