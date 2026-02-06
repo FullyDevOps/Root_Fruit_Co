@@ -6,8 +6,6 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -46,11 +44,9 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      
       {/* Hero Section */}
       <section className="w-full max-w-[100rem] mx-auto px-6 py-16 md:py-24">
-        <motion.div 
+        <motion.div
           className="max-w-3xl mx-auto text-center"
           initial="initial"
           animate="animate"
@@ -133,11 +129,11 @@ export default function ContactPage() {
                   <Checkbox
                     id="wholesale"
                     checked={formData.wholesaleInquiry}
-                    onCheckedChange={(checked) => 
+                    onCheckedChange={(checked) =>
                       setFormData({ ...formData, wholesaleInquiry: checked as boolean })
                     }
                   />
-                  <label 
+                  <label
                     htmlFor="wholesale"
                     className="font-paragraph text-sm text-foreground cursor-pointer"
                   >
@@ -145,7 +141,7 @@ export default function ContactPage() {
                   </label>
                 </div>
 
-                <Button 
+                <Button
                   type="submit"
                   className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg py-6 font-paragraph font-bold"
                 >
@@ -227,8 +223,6 @@ export default function ContactPage() {
           </motion.div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
