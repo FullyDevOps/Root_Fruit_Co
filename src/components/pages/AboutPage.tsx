@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import { Heart, Target, Sparkles, Users } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 export default function AboutPage() {
   const fadeIn = {
@@ -63,11 +61,9 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      
       {/* Hero Section */}
       <section className="w-full max-w-[100rem] mx-auto px-6 py-16 md:py-24">
-        <motion.div 
+        <motion.div
           className="max-w-3xl mx-auto text-center"
           initial="initial"
           animate="animate"
@@ -144,7 +140,7 @@ export default function AboutPage() {
             }
           }}
         >
-          <motion.h2 
+          <motion.h2
             className="font-heading text-3xl md:text-4xl text-center text-foreground mb-12"
             variants={fadeIn}
           >
@@ -183,7 +179,7 @@ export default function AboutPage() {
               }
             }}
           >
-            <motion.h2 
+            <motion.h2
               className="font-heading text-3xl md:text-4xl text-center text-foreground mb-12"
               variants={fadeIn}
             >
@@ -191,7 +187,7 @@ export default function AboutPage() {
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {differentiators.map((item, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   className="p-6 bg-background rounded-lg border-l-4 border-primary"
                   variants={fadeIn}
@@ -208,8 +204,6 @@ export default function AboutPage() {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }
